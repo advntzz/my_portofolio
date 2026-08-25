@@ -599,14 +599,62 @@ p {
     }
 
     .about-card {
-    padding: 20px;
+        padding: 20px;
     }
 
     .about-card:hover {
-    transform: translateY(-4px);
+        transform: translateY(-4px);
     }
 
-    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .skill-card {
+        padding: 20px 18px;
+        gap: 14px;
+    }
+
+    .skill-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .skill-card p {
+        font-size: 0.9rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .project-card {
+        margin-bottom: 0;
+    }
+
+    .contact-form .form-row,
+    .contact-form .form-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-form .form-actions .btn,
+    .contact-form .btn {
+        width: 100%;
+    }
+
+    .contact-form {
+        padding: 18px 14px;
+    }
+
+    .contact-card {
+        padding: 18px 14px;
+    }
+
+    .section-heading h2 {
+        font-size: 2.5rem;
+    }
 
     /* EDUCATION MOBILE */
 
@@ -649,7 +697,53 @@ p {
     }
 
     .education-content h3 {
-    font-size: 1.1rem;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .cv-section > .container {
+        padding: 26px 16px;
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .section-heading h2 {
+        font-size: 2.2rem;
+    }
+
+    .skill-card {
+        padding: 18px 16px;
+    }
+
+    .skill-icon {
+        min-width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+
+    .contact-form .form-row,
+    .contact-form .form-actions {
+        gap: 10px;
+    }
+
+    .project-content {
+        padding: 20px 16px 18px;
+    }
+
+    .project-content h3 {
+        font-size: 1.5rem;
     }
 }
 
