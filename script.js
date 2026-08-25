@@ -12,11 +12,7 @@ const gallerySets = {
 };
 
 // Certificate / Study Excursion gallery
-gallerySets.studyexcursion = [
-  "img/JKT.png",
-  "img/SMA.jpeg",
-  "img/SMP.jpeg",
-];
+gallerySets.studyexcursion = ["img/JKT.png", "img/SMA.jpeg", "img/SMP.jpeg"];
 
 let activeGallery = "cybernest";
 let currentImage = 0;
@@ -99,9 +95,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // 1. Create Email Service in EmailJS
   // 2. Create an Email Template
   // 3. Replace the values below with your actual EmailJS credentials
-  const SERVICE_ID = "service_xxxxxxx";
-  const TEMPLATE_ID = "template_xxxxxxx";
-  const PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+  const SERVICE_ID = "service_y76tp7a";
+  const TEMPLATE_ID = "template_50vhrgf";
+  const PUBLIC_KEY = "nbZo1aSAOpCPOCBIn";
 
   if (window.emailjs) {
     emailjs.init({ publicKey: PUBLIC_KEY });
@@ -130,7 +126,8 @@ document.addEventListener("DOMContentLoaded", function () {
       TEMPLATE_ID.includes("xxxxx") ||
       PUBLIC_KEY.includes("YOUR_PUBLIC_KEY")
     ) {
-      status.textContent = "EmailJS is not configured yet. Fill in SERVICE_ID, TEMPLATE_ID, and PUBLIC_KEY in script.js.";
+      status.textContent =
+        "EmailJS is not configured yet. Fill in SERVICE_ID, TEMPLATE_ID, and PUBLIC_KEY in script.js.";
       return;
     }
 
