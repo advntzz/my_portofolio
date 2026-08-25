@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // 2. Create an Email Template
   // 3. Replace the values below with your actual EmailJS credentials
   const SERVICE_ID = "service_y76tp7a";
-  const TEMPLATE_ID = "template_50vhrgf";
+  const TEMPLATE_ID = "template_50vhrgff";
   const PUBLIC_KEY = "nbZo1aSAOpCPOCBIn";
 
   if (window.emailjs) {
@@ -118,16 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       status.textContent = "Please provide a valid email address.";
-      return;
-    }
-
-    if (
-      SERVICE_ID.includes("xxxxx") ||
-      TEMPLATE_ID.includes("xxxxx") ||
-      PUBLIC_KEY.includes("YOUR_PUBLIC_KEY")
-    ) {
-      status.textContent =
-        "EmailJS is not configured yet. Fill in SERVICE_ID, TEMPLATE_ID, and PUBLIC_KEY in script.js.";
       return;
     }
 
