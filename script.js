@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // 2. Create an Email Template
   // 3. Replace the values below with your actual EmailJS credentials
   const SERVICE_ID = "service_y76tp7a";
-  const TEMPLATE_ID = "template_50vhrgff";
+  const TEMPLATE_ID = "template_50vhrgf";
   const PUBLIC_KEY = "nbZo1aSAOpCPOCBIn";
 
   if (window.emailjs) {
