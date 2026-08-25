@@ -1275,6 +1275,17 @@ p {
 .contact-card { background: var(--panel-light); padding: 16px; border-radius: 12px; border: 1px solid var(--border); }
 .contact-card h4 { margin: 0 0 8px; color: var(--green); }
 .contact-link { color: var(--green); font-weight: 600; text-decoration: none; }
+.contact-item-link,
+.contact-social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.contact-item-link i,
+.contact-social-link i {
+    font-size: 1.1rem;
+    line-height: 1;
+}
 .contact-note { color: var(--muted); font-size: 0.9rem; margin-top: 8px; }
 
 @media (max-width: 900px) {
